@@ -1,0 +1,18 @@
+#服务的端口号
+server:
+  port: 7001
+spring:
+  application:
+    name: starry-sky-eureka
+
+eureka:
+  server:
+    enable-self-preservation: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+##配置基本的保护  ，这里的配置就是pom文件中注释的那个功能，感兴趣的话可以打开试一试哦（解开pom文件中注释，还有这里的注释）
+##spring.security.basic.enabled=true
+##spring.security.user.name=gxy
+##spring.security.user.password=123

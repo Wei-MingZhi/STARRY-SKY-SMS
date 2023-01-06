@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="starry-sky-api" />
+        <module name="starry-sky-common" />
+        <module name="starry-sky-order" />
+        <module name="starry-sky-feign" />
+        <module name="starry-sky-userinfo" />
+        <module name="starry-sky-gateway" />
+        <module name="starry-sky-payment" />
+        <module name="starry-sky-message" />
+        <module name="starry-sky-eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="starry-sky-nacos" target="11" />
+      <module name="starry-sky-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="starry-sky-api" options="-parameters" />
+      <module name="starry-sky-common" options="-parameters" />
+      <module name="starry-sky-eureka" options="-parameters" />
+      <module name="starry-sky-feign" options="-parameters" />
+      <module name="starry-sky-gateway" options="-parameters" />
+      <module name="starry-sky-message" options="-parameters" />
+      <module name="starry-sky-nacos" options="-parameters" />
+      <module name="starry-sky-order" options="-parameters" />
+      <module name="starry-sky-payment" options="-parameters" />
+      <module name="starry-sky-service" options="-parameters" />
+      <module name="starry-sky-userinfo" options="-parameters" />
+    </option>
+  </component>
+</project>
